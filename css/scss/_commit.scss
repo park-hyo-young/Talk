@@ -56,3 +56,12 @@ $white : #fff;
     content: '';
     clear: both;
 }
+// 스크롤바
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    height: 17%;
+    border-radius: 30px;
+    background-color: $gray-e0;
+}
