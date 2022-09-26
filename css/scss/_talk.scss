@@ -1,4 +1,4 @@
-.snb-btns {
+.snb_btns {
     position: relative;
     width: 62px;
     height: 100vh;
@@ -7,21 +7,21 @@
     a {
         display: block;
     }
-    .user-list-btn {
+    .user_list_btn {
         margin-bottom: 39px;
     }
-    .setting-btn {
+    .setting_btn {
         position: absolute;
         bottom: 20px;
     }
 }
-.talk-snb {
+.talk_snb {
     position: relative; 
     width: 300px;
     height: 100vh;
     padding: 20px 10px 17px 15px;
     border-right: 1px solid $gray-de;
-    .list-title {
+    .list_title {
         margin-bottom: 11px;
         font-size: 17px;
         letter-spacing: -.1px;
@@ -37,7 +37,7 @@
             font-size: 15px;
         }
     }
-    .search-box {
+    .search_box {
         width: 100%;
         height: 40px;
         padding: 10px 22px;
@@ -56,19 +56,19 @@
             }
         }
     }
-    .plus-btn {
+    .plus_btn {
         display: block;
         position: absolute;
         right: 20px;
         bottom: 20px;
     }
 }
-.talk-list-box  {
+.talk_list_box  {
     overflow: auto;
     max-height: calc(100% - 135px);
     padding-right: 10px;
 }
-.talk-group {
+.talk_group {
     position: relative;
     align-items: start;
     color: $black;
@@ -81,12 +81,12 @@
         height: 42px;
         margin-right: 12px;
     }
-    .text-box {
+    .text_box {
         width: 155px;
         text-align: left;
         letter-spacing: -.1px;
-        .title-box {
-            .talk-title {
+        .title_box {
+            .talk_title {
                 @include ellipsis;
                 max-width: 155px;
                 height: 15px;
@@ -99,7 +99,7 @@
                 margin-left: 5px;
             }
         }
-        .talk-text {
+        .talk_text {
             overflow: hidden;
             max-height: 40px;
             margin-top: 10px;
@@ -116,7 +116,7 @@
         font-size: 13px;
         letter-spacing: -.1px;
     }
-    .talk-alarm {
+    .talk_alarm {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -127,20 +127,20 @@
         background-color: $pink;
     }
 }
-.talk-area {
+.talk_area {
     flex-wrap: wrap;
     align-self: start;
     width: calc(100% - 362px);
     min-width: 440px;
     padding-right: 8px;
-    .talk-header {
+    .talk_header {
         position: fixed;
         width: calc(100% - 362px);
         top: 0;
         padding: 20px 20px 20px 15px;
         background-color: $white;
         z-index: 100;
-        .talk-title {
+        .talk_title {
             font-size: 17px;
         }
         .member {
@@ -148,10 +148,10 @@
             font-size: 12px;
             color: $gray-99;
         }
-        .pin-btn {
+        .pin_btn {
             margin-left: 13px;
         }
-        .btn-group {
+        .btn_group {
             a {
                 display: inline-block;
                 margin-left: 15px;
@@ -162,17 +162,17 @@
         }
     }
 }
-.talk-body {
+.talk_body {
     position: relative;
     overflow: auto;
     width: 100%;
     height: calc(100vh - 191px);
     margin-top: 85px;
     padding: 35px 16px 10px;
-    .speech-bubble {
+    .speech_bubble {
         align-items: end;
         margin-bottom: 6px;
-        .type-01, .type-02 {
+        .type_01, .type_02 {
             display: inline-block;
             padding: 10px 15px;
             font-size: 13px;
@@ -182,7 +182,7 @@
             margin-left: 56px;
             color: $black;
             background-color: $gray-ee;
-            &.type-01 {
+            &.type_01 {
                 margin-top: 24px;
                 border-radius: 0 20px 20px 20px;
             }
@@ -191,11 +191,11 @@
             color: $white;
             text-align: right;
             background-color: $violet-02;
-            &.type-01 {
+            &.type_01 {
                 border-radius: 20px 0 20px 20px;
             }
         }
-        .type-02 {
+        .type_02 {
             border-radius: 20px;
         }
         .etc {
@@ -204,7 +204,7 @@
                 display: block;
                 font-size: 12px;
                 letter-spacing: -.1px;
-                &.reading-num {
+                &.reading_num {
                     color: $violet-02;
                     padding: 4px 0;
                 }
@@ -219,15 +219,19 @@
             }
         }
     }
-    .talk-left {
+    .talk_left {
         position: relative;
         margin-top: 20px;
+        .speech_bubble {
+            display: flex;
+            justify-content: start;
+        }
         figure {
             display: inline-block;
             position: absolute;
             margin-right: 10px;
         }
-        .user-name {
+        .user_name {
             position: absolute;
             top: 5px;
             left: 56px;
@@ -239,10 +243,14 @@
             text-align-last: left;
         }
     }
-    .talk-right {
+    .talk_right {
         position: relative;
         margin-top: 20px;
-        .type-01 {
+        .speech_bubble {
+            display: flex;
+            justify-content: end;
+        }
+        .type_01 {
             text-align-last: right;
         }
         .etc {
@@ -265,7 +273,7 @@
             background-color: $gray-f5;
         }
     }
-    .alarm-text {
+    .alarm_text {
         text-align: center;
         font-size: 13px;
         color: $gray-99;
@@ -276,34 +284,34 @@
             }
         }
     }
-    .down-btn {
+    .down_btn {
         display: none;
         position: fixed;
         right: 25px;
         bottom: 132px;
     }
 }
-.talk-popup  {
+.talk_popup  {
     display: block;
     position: fixed;
     width: calc(100% - 392px);
     border-radius: 6px;
     color: $white;
     font-size: 14px;
-    &.clock-notcie {
+    &.clock_notcie {
         align-items: start;
         top: 85px;
         padding: 14px 20px;
         z-index: 50;
         box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.1);
-        .notice-group {
+        .notice_group {
             align-items: start;
             span {
                 margin-left: 10px;
                 padding-top: 2px;
             }
         }
-        .time-list {
+        .time_list {
             margin-left: 30px;
             padding-top: 3px;
             .time {
@@ -327,7 +335,7 @@
             }
         }
     }
-    &.new-message {
+    &.new_message {
         top: 140px;
         padding: 13px 0;
         letter-spacing: -.1px;
@@ -341,7 +349,7 @@
         }
     }
 }
-.text-arer {
+.text_arer {
     position: absolute;
     width: calc(100% - 362px);
     min-height: 100px;
@@ -364,7 +372,7 @@
             background-color: $white;
         }
     }
-    .btn-group {
+    .btn_group {
         align-self: end;
         width: 120px;
         margin-left: 25px;

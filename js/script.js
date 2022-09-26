@@ -1,11 +1,11 @@
 $(document).ready(function(){
     // 상담시간 안내 팝업
-    $('.clock-notcie').on('click', function(e){
+    $('.clock_notcie').on('click', function(e){
         e.preventDefault();
         if($(this).hasClass('up') === true) {
-            $('.time-list > .time').stop().slideUp();
+            $('.time_list > .time').stop().slideUp();
         } else {
-            $('.time-list > .time').stop().slideDown();
+            $('.time_list > .time').stop().slideDown();
         }
     })
     $('.dropdown').on('click', function(e){
@@ -13,29 +13,29 @@ $(document).ready(function(){
         $(this).toggleClass('up');
     });
 
-    $('.talk-member').on('click', function(e){
+    $('.talk_member').on('click', function(e){
         e.preventDefault();
         if($(this).hasClass('up') === true) {
-            $('.member-list').stop().slideDown();
+            $('.member_list').stop().slideDown();
         } else {
-            $('.member-list').stop().slideUp();
+            $('.member_list').stop().slideUp();
         }
     })
 
     // 스크롤 버튼
-    $('.talk-body').scroll(function(e) {
+    $('.talk_body').scroll(function(e) {
         e.preventDefault();
         if ($(this).scrollTop() < 10) {
-            $('.down-btn').fadeIn();
+            $('.down_btn').fadeIn();
         } else {
-            $('.down-btn').fadeOut();
+            $('.down_btn').fadeOut();
         }
     });
-    $(".down-btn, .new-message").click(function(e){
+    $(".down_btn, .new_message").click(function(e){
         e.preventDefault();
-        $('.talk-body').animate({scrollTop : ( $(document).height())}, 600);
+        $('.talk_body').animate({scrollTop : ( $(document).height())}, 600);
     });
-    $('.new-message').click(function(e){
+    $('.new_message').click(function(e){
         e.preventDefault();
         $(this).fadeOut(100);
     });
@@ -43,26 +43,26 @@ $(document).ready(function(){
     // 외부영역 클릭시 팝업 닫기
     $(document).mouseup(function (e){
         e.preventDefault();
-        if($('.popup-back').has(e.target).length === 0){
-            $('.popup-back').fadeOut(500);
-            $('.side-bar').removeClass('open');
+        if($('.popup_back').has(e.target).length === 0){
+            $('.popup_back').fadeOut(500);
+            $('.side_bar').removeClass('open');
         }
     });
 
-    $('.close-btn').on('click', function(e){
+    $('.close_btn').on('click', function(e){
         e.preventDefault();
-        $('.popup-back').fadeOut(500);
-        $('.side-bar').removeClass('open');
+        $('.popup_back').fadeOut(500);
+        $('.side_bar').removeClass('open');
     });
     
-    $('.search-popup-btn').on('click', function(e){
+    $('.search_popup_btn').on('click', function(e){
         e.preventDefault();
-        $('.search-popup').fadeIn(500);
-        $('.side-bar').addClass('open');
+        $('.search_popup').fadeIn(500);
+        $('.side_bar').addClass('open');
     });
-    $('.info-popup-btn').on('click', function(e){
+    $('.info_popup_btn').on('click', function(e){
         e.preventDefault();
-        $('.info-popup').fadeIn(500);
-        $('.side-bar').addClass('open');
+        $('.info_popup').fadeIn(500);
+        $('.side_bar').addClass('open');
     });
 });
