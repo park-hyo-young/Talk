@@ -65,4 +65,10 @@ $(document).ready(function(){
         $('.info_popup').fadeIn(500);
         $('.side_bar').addClass('open');
     });
+
+    // 마우스 클릭시 add 클래스 toggle, hasClass
+    $('.off i').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('on');
+    });
 });

@@ -7,8 +7,11 @@
     a {
         display: block;
     }
-    .user_list_btn {
-        margin-bottom: 39px;
+    .list_btn {
+        margin-top: 39px;
+        &:first-child {
+            margin-top: 0;
+        }
     }
     .setting_btn {
         position: absolute;
@@ -63,7 +66,7 @@
         bottom: 20px;
     }
 }
-.talk_list_box  {
+.talk_list  {
     overflow: auto;
     max-height: calc(100% - 135px);
     padding-right: 10px;
@@ -176,8 +179,9 @@
         align-items: end;
         .type_01, .type_02 {
             display: inline-block;
-            padding: 10px 15px;
+            padding: 8px 15px 8px;
             font-size: 13px;
+            line-height: 18px;
             letter-spacing: -.1px;
         }
         .left {
@@ -302,11 +306,13 @@
     color: $white;
     font-size: 14px;
     &.clock_notcie {
+        display: flex;
         align-items: start;
+        justify-content: space-between;
         top: 85px;
         padding: 14px 20px;
         z-index: 50;
-        box-shadow: 0 6px 8px rgba($color: $black, $alpha: 0.1);
+        box-shadow: 0 6px 8px rgba($color: $black, $alpha: .1);
         .notice_group {
             align-items: start;
             span {
@@ -331,7 +337,6 @@
             }
         }
         &.dropdown {
-            display: block;
             background: $gray_aa url('../images/dropdown-02.png') right 20px top 20px no-repeat;
             &.up {
                 background-image: url('../images/dropup-02.png');
@@ -340,15 +345,15 @@
     }
     &.new_message {
         top: 140px;
-        padding: 13px 0;
+        padding: 14+px 0;
         letter-spacing: -.1px;
         text-align: center;
         background-color: $pink;
         z-index: 40;
-        box-shadow: 0 6px 8px rgba($color: $pink, $alpha: 0.1);
+        box-shadow: 0 6px 8px rgba($color: $pink, $alpha: .1);
         span {
             padding-left: 10px;
-            opacity: 0.7;
+            opacity: .7;
         }
     }
 }

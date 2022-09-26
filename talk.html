@@ -11,9 +11,9 @@
     <div class="wrap">
         <div class="flex start">
             <div class="snb_btns">
-                <a href="#none" class="user_list_btn"><i class="sp sp_ico_profile_off"></i></a>
-                <a href="#none" class="talk_list_btn"><i class="sp sp_ico_talk_on"></i></a>
-                <a href="#none" class="setting_btn"><i class="sp sp_ico_setting_off"></i></a>
+                <a href="#none" class="list_btn"><i class="sp sp_ico_profile"></i></a>
+                <a href="#none" class="list_btn"><i class="sp sp_ico_talk on"></i></a>
+                <a href="#none" class="setting_btn"><i class="sp sp_ico_setting"></i></a>
             </div>
             <div class="talk_snb">
                 <p class="list_title">대화목록</p>
@@ -26,7 +26,7 @@
                     <input type="text" class="search" placeholder="이름 검색">
                 </div>
                 <!-- 대화방 -->
-                <div class="talk_list_box">
+                <div class="talk_list">
                     <a href="#none" class="talk_group">
                         <figure><i class="sp sp_ico_notice"></i></figure>
                         <div class="text_box">
@@ -103,10 +103,10 @@
                         <figure class="mr15"><i class="sp sp_ico_profile_01"></i></figure>
                         <p class="talk_title">권현주, 김지언, 박효영</p>
                         <sub class="member">3</sub>
-                        <a href="#none" class="pin_btn"><i class="sp sp_ico_pin_off"></i></a>
+                        <a href="#none" class="pin_btn off"><i class="sp sp_ico_pin"></i></a>
                     </div>
                     <div class="btn_group">
-                        <a href="#none"><i class="sp sp_ico_alarm_off"></i></a>
+                        <a href="#none" class="off"><i class="sp sp_ico_alarm"></i></a>
                         <a href="#none" class="search_popup_btn"><i class="sp sp_ico_search_02"></i></a>
                         <a href="#none" class="info_popup_btn"><i class="sp sp_ico_info"></i></a>
                     </div>
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#none" class="talk_popup clock_notcie flex between dropdown">
+                    <a href="#none" class="talk_popup clock_notcie dropdown">
                         <div class="notice_group flex start">
                             <figure><i class="sp sp_ico_clock"></i></figure>
                             <span>상담가능 시간</span>
@@ -222,6 +222,7 @@
                 </div>
             </div>
         </div>
+        <!-- 검색 팝업 -->
         <div class="popup_back search_popup">
             <div class="side_bar">
                 <div class="popup_inner">
@@ -243,7 +244,7 @@
                     <p class="search_text">검색어를 입력하세요</p>
                     <p class="search_text"><span class="keyword">준비물</span>로 검색중입니다.</p>
                     <!-- 검색 결과 -->
-                    <div class="talk_list_box mt30">
+                    <div class="talk_list mt30">
                         <a href="#none" class="talk_group">
                             <figure><i class="sp sp_ico_profile_01"></i></figure>
                             <div class="text_box">
@@ -267,6 +268,7 @@
                 <a href="#none" class="close_btn"><i class="sp sp_ico_close"></i></a>
             </div>
         </div>
+        <!-- 채팅방 정보 팝업 -->
         <div class="popup_back info_popup">
             <div class="side_bar">
                 <div class="popup_inner">
