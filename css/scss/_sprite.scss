@@ -1,5 +1,4 @@
 .sp {display: inline-block; background: url('/images/sprite/sprite.png') no-repeat;vertical-align: middle;
-
     &.sp_ico_profile_off {width: 30px; height: 33px; background-position: 0 0;}
     &.sp_ico_profile_on {width: 30px; height: 33px; background-position: -100px 0;}
     &.sp_ico_talk_off {width: 30px; height: 30px; background-position: -200px 0;}
@@ -11,7 +10,7 @@
     &.sp_ico_profile_01 {width: 42px; height: 42px; background-position: -200px -100px;}
     &.sp_ico_profile_02 {width: 42px; height: 42px; background-position: -300px -100px;}
     &.sp_ico_profile_03 {width: 26px; height: 26px; background-position: -300px -400px;}
-    &.sp_ico_plus_btn {width: 48px; height: 48px; border-radius: 50%; background-position: -400px -100px; box-shadow: 0px 10px 15px rgba(98,85,246,0.3);}
+    &.sp_ico_plus_btn {width: 48px; height: 48px; border-radius: 50%; background-position: -400px -100px; box-shadow: 0px 10px 15px rgba($color: $violet-01, $alpha: .3);}
     &.sp_ico_info {width: 24px; height: 24px; background-position: -500px -100px;}
     &.sp_ico_pin_off {width: 16px; height: 16px; background-position: 0 -200px;}
     &.sp_ico_pin_on {width: 16px; height: 16px; background-position: -100px -200px;}

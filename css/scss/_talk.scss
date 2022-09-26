@@ -3,7 +3,7 @@
     width: 62px;
     height: 100vh;
     padding: 37px 16px 20px;
-    background-color: $violet-01;
+    background-color: $violet_01;
     a {
         display: block;
     }
@@ -20,7 +20,7 @@
     width: 300px;
     height: 100vh;
     padding: 20px 10px 17px 15px;
-    border-right: 1px solid $gray-de;
+    border-right: 1px solid $gray_de;
     .list_title {
         margin-bottom: 11px;
         font-size: 17px;
@@ -29,7 +29,7 @@
     select {
         margin-bottom: 17px;
         padding-right: 20px;
-        color: $gray-66;
+        color: $gray_66;
         font-size: 15px;
         appearance: none;
         background: url('/images/dropdown-01.png') center right 2px no-repeat;
@@ -43,7 +43,7 @@
         padding: 10px 22px;
         margin-bottom: 30px;
         border-radius: 30px;
-        background-color: $gray-f5;
+        background-color: $gray_f5;
         a {
             margin-right: 14px;
         }
@@ -70,6 +70,8 @@
 }
 .talk_group {
     position: relative;
+    display: flex;
+    justify-content: start;
     align-items: start;
     color: $black;
     margin-bottom: 30px;
@@ -87,14 +89,15 @@
         letter-spacing: -.1px;
         .title_box {
             .talk_title {
-                @include ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
                 max-width: 155px;
                 height: 15px;
                 font-size: 15px;
                 letter-spacing: -.3px;
             }
             .member {
-                color: $gray-bb;
+                color: $gray_bb;
                 font-size: 13px;
                 margin-left: 5px;
             }
@@ -103,7 +106,7 @@
             overflow: hidden;
             max-height: 40px;
             margin-top: 10px;
-            color: $gray-66;
+            color: $gray_66;
             font-size: 13px;
             line-height: 20px;
         }
@@ -112,7 +115,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        color: $gray-bb;
+        color: $gray_bb;
         font-size: 13px;
         letter-spacing: -.1px;
     }
@@ -146,7 +149,7 @@
         .member {
             margin-left: 10px;
             font-size: 12px;
-            color: $gray-99;
+            color: $gray_99;
         }
         .pin_btn {
             margin-left: 13px;
@@ -171,7 +174,6 @@
     padding: 35px 16px 10px;
     .speech_bubble {
         align-items: end;
-        margin-bottom: 6px;
         .type_01, .type_02 {
             display: inline-block;
             padding: 10px 15px;
@@ -181,7 +183,7 @@
         .left {
             margin-left: 56px;
             color: $black;
-            background-color: $gray-ee;
+            background-color: $gray_ee;
             &.type_01 {
                 margin-top: 24px;
                 border-radius: 0 20px 20px 20px;
@@ -190,12 +192,13 @@
         .right {
             color: $white;
             text-align: right;
-            background-color: $violet-02;
+            background-color: $violet_02;
             &.type_01 {
                 border-radius: 20px 0 20px 20px;
             }
         }
         .type_02 {
+            margin-top: 6px;
             border-radius: 20px;
         }
         .etc {
@@ -205,11 +208,11 @@
                 font-size: 12px;
                 letter-spacing: -.1px;
                 &.reading_num {
-                    color: $violet-02;
+                    color: $violet_02;
                     padding: 4px 0;
                 }
                 &.time {
-                    color: $gray-bb;
+                    color: $gray_bb;
                     padding-bottom: 2px;
                 }
             }
@@ -235,7 +238,7 @@
             position: absolute;
             top: 5px;
             left: 56px;
-            color: $gray-99;
+            color: $gray_99;
             font-size: 13px;
         }
         .etc {
@@ -267,16 +270,16 @@
             display: inline-block;
             padding: 0 15px;
             border-radius: 50px;
-            color: $gray-99;
+            color: $gray_99;
             font-size: 13px;
             line-height: 28px;
-            background-color: $gray-f5;
+            background-color: $gray_f5;
         }
     }
     .alarm_text {
         text-align: center;
         font-size: 13px;
-        color: $gray-99;
+        color: $gray_99;
         p {
             margin-bottom: 15px;
             &:last-child {
@@ -303,7 +306,7 @@
         top: 85px;
         padding: 14px 20px;
         z-index: 50;
-        box-shadow: 0 6px 8px rgba($color: #000000, $alpha: 0.1);
+        box-shadow: 0 6px 8px rgba($color: $black, $alpha: 0.1);
         .notice_group {
             align-items: start;
             span {
@@ -329,7 +332,7 @@
         }
         &.dropdown {
             display: block;
-            background: $gray-aa url('/images/dropdown-02.png') right 20px top 20px no-repeat;
+            background: $gray_aa url('/images/dropdown-02.png') right 20px top 20px no-repeat;
             &.up {
                 background-image: url('/images/dropup-02.png');
             }
@@ -355,7 +358,7 @@
     min-height: 100px;
     padding: 17px 15px;
     bottom: 0;
-    border-top: 1px solid $gray-de;
+    border-top: 1px solid $gray_de;
     background-color: $white;
     textarea {
         overflow: auto;
@@ -366,7 +369,7 @@
         font-size: 14px;
         resize: none;
         &::placeholder {
-            color: $gray-99;
+            color: $gray_99;
         }
         &:disabled {
             background-color: $white;
