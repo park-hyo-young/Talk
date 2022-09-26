@@ -45,12 +45,12 @@
             border-radius: 30px;
             border: 1px solid transparent;
             font-size: 14px;
-            background: $gray_f5 url('/images/search_01.png') center left 23px no-repeat;
+            background: $gray_f5 url('../images/search_01.png') center left 23px no-repeat;
             color: $black;
             &.active {
                 border-color: $black;
                 background-color: $white;
-                background-image: url('/images/search_02.png');
+                background-image: url('../images/search_02.png');
             }
         }
         .research {
@@ -99,10 +99,10 @@
             letter-spacing: -.1px;
             &.dropdown {
                 display: block;
-                background: url('/images/dropdown-01.png') right 20px top 20px no-repeat;
+                background: url('../images/dropdown-01.png') right 20px top 20px no-repeat;
                 transition: all ease .1s;
                 &.up {
-                    background-image: url('/images/dropup-01.png');
+                    background-image: url('../images/dropup-01.png');
                 }
             }
         }

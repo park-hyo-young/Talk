@@ -32,7 +32,7 @@
         color: $gray_66;
         font-size: 15px;
         appearance: none;
-        background: url('/images/dropdown-01.png') center right 2px no-repeat;
+        background: url('../images/dropdown-01.png') center right 2px no-repeat;
         option {
             font-size: 15px;
         }
@@ -332,9 +332,9 @@
         }
         &.dropdown {
             display: block;
-            background: $gray_aa url('/images/dropdown-02.png') right 20px top 20px no-repeat;
+            background: $gray_aa url('../images/dropdown-02.png') right 20px top 20px no-repeat;
             &.up {
-                background-image: url('/images/dropup-02.png');
+                background-image: url('../images/dropup-02.png');
             }
         }
     }
