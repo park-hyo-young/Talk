@@ -40,7 +40,6 @@ $(document).ready(function(){
         $(this).fadeOut(100);
     });
 
-
     // 외부영역 클릭시 팝업 닫기
     $(document).mouseup(function (e){
         e.preventDefault();

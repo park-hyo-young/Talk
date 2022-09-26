@@ -133,38 +133,6 @@
     width: calc(100% - 362px);
     min-width: 440px;
     padding-right: 8px;
-    &.none {
-        position: relative;
-        height: 100vh;
-        padding-right: 0;
-        background-color: $gray-f5;
-    }
-    .talk-none {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        text-align: center;
-        transform: translate(-50%, -50%);
-        p, span {
-            font-size: 18px;
-            letter-spacing: -.18px;
-            color: $gray-66;
-        }
-        span {
-            color: $violet-01;
-        }
-        .small {
-            font-size: 15px;
-            margin-top: 10px;
-            a {
-                padding-bottom: 2px;
-                color: $pink;
-                font-size: 15px;
-                border-bottom: 1px solid $pink;
-            }
-        }
-    }
     .talk-header {
         position: fixed;
         width: calc(100% - 362px);
