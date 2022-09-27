@@ -91,6 +91,9 @@
         text-align: left;
         letter-spacing: -.1px;
         .title_box {
+            display: flex;
+            align-items: center;
+            justify-content: start;
             .talk_title {
                 overflow: hidden;
                 white-space: nowrap;
@@ -296,65 +299,6 @@
         position: fixed;
         right: 25px;
         bottom: 132px;
-    }
-}
-.talk_popup  {
-    display: block;
-    position: fixed;
-    width: calc(100% - 392px);
-    border-radius: 6px;
-    color: $white;
-    font-size: 14px;
-    &.clock_notcie {
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        top: 85px;
-        padding: 14px 20px;
-        z-index: 50;
-        box-shadow: 0 6px 8px rgba($color: $black, $alpha: .1);
-        .notice_group {
-            align-items: start;
-            span {
-                margin-left: 10px;
-                padding-top: 2px;
-            }
-        }
-        .time_list {
-            margin-left: 30px;
-            padding-top: 3px;
-            .time {
-                display: none;
-            }
-            ul {
-                margin-top: 10px;
-                li {
-                    margin-bottom: 10px;
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                }
-            }
-        }
-        &.dropdown {
-            background: $gray_aa url('../images/dropdown-02.png') right 20px top 20px no-repeat;
-            &.up {
-                background-image: url('../images/dropup-02.png');
-            }
-        }
-    }
-    &.new_message {
-        top: 140px;
-        padding: 14+px 0;
-        letter-spacing: -.1px;
-        text-align: center;
-        background-color: $pink;
-        z-index: 40;
-        box-shadow: 0 6px 8px rgba($color: $pink, $alpha: .1);
-        span {
-            padding-left: 10px;
-            opacity: .7;
-        }
     }
 }
 .text_arer {

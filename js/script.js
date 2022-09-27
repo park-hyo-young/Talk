@@ -12,7 +12,7 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).toggleClass('up');
     });
-
+    // 대화상대 스크롤 업/다운
     $('.talk_member').on('click', function(e){
         e.preventDefault();
         if($(this).hasClass('up') === true) {
@@ -31,16 +31,18 @@ $(document).ready(function(){
             $('.down_btn').fadeOut();
         }
     });
+    // 스크롤 버튼, 새로운 메세지 알림 팝업 클릭 시 아래로 스크롤
     $(".down_btn, .new_message").click(function(e){
         e.preventDefault();
         $('.talk_body').animate({scrollTop : ( $(document).height())}, 600);
     });
+    // 새로운 메세지 알림 팝업
     $('.new_message').click(function(e){
         e.preventDefault();
         $(this).fadeOut(100);
     });
 
-    // 외부영역 클릭시 팝업 닫기
+    // 외부 영역/닫기 버튼 클릭 시 팝업 닫기
     $(document).mouseup(function (e){
         e.preventDefault();
         if($('.popup_back').has(e.target).length === 0){
@@ -48,7 +50,6 @@ $(document).ready(function(){
             $('.side_bar').removeClass('open');
         }
     });
-
     $('.close_btn').on('click', function(e){
         e.preventDefault();
         $('.popup_back').fadeOut(500);

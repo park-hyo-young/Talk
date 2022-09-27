@@ -36,6 +36,7 @@
         right: 10px;
         padding: 10px;
     }
+    // 키워드 검색창
     .search_box {
         position: relative;
         .search {
@@ -70,6 +71,7 @@
         color: $violet_01;
     }
 }
+// 채팅방 정보 창
 .info_popup {
     figure {
         width: 120px;
@@ -116,27 +118,91 @@
             height: 38px;
             padding: 0;
             line-height: 38px;
-            &.member_setting {
-                position: relative;
-                color: $gray_66;
-                padding-left: 36px;
-                &::before {
-                    position: absolute;
-                    content: '';
-                    width: 26px;
-                    height: 26px;
-                    left: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    border-radius: 50%;
-                    background-color: #e2e2e2;
-                }
-            }
             i {
                 margin-top: -4px;
                 margin-right: 10px;
                 vertical-align: middle;
             }
         }
+        .member_setting {
+            position: relative;
+            color: $gray_66;
+            padding-left: 36px;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 26px;
+                height: 26px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: #e2e2e2;
+            }
+        }
+    }
+}
+// 채팅방 상단 팝업
+.talk_popup  {
+    display: block;
+    position: fixed;
+    width: calc(100% - 392px);
+    border-radius: 6px;
+    color: $white;
+    font-size: 14px;
+}
+// 상담 가능시간 팝업
+.clock_notcie {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    top: 85px;
+    padding: 14px 20px;
+    z-index: 50;
+    box-shadow: 0 6px 8px rgba($color: $black, $alpha: .1);
+    .notice_group {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        span {
+            margin-left: 10px;
+            padding-top: 2px;
+        }
+    }
+    &.dropdown {
+        background: $gray_aa url('../images/dropdown-02.png') right 20px top 20px no-repeat;
+        &.up {
+            background-image: url('../images/dropup-02.png');
+        }
+    }
+    .time_list {
+        margin-left: 30px;
+        padding-top: 3px;
+        .time {
+            display: none;
+        }
+    }
+    ul {
+        margin-top: 10px;
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+// 새로운 메세지 팝업
+.new_message {
+    top: 140px;
+    padding: 14px 0;
+    letter-spacing: -.1px;
+    text-align: center;
+    background-color: $pink;
+    z-index: 40;
+    box-shadow: 0 6px 8px rgba($color: $pink, $alpha: .1);
+    span {
+        padding-left: 10px;
+        opacity: .7;
     }
 }

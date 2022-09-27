@@ -47,14 +47,6 @@ $white : #fff;
     &.between {
         justify-content: space-between;
     }
-    &.wrap {
-        flex-wrap: wrap;
-    }
-}
-.cf::after {
-    display: block;
-    content: '';
-    clear: both;
 }
 // 스크롤바
 ::-webkit-scrollbar{
