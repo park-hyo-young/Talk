@@ -37,28 +37,19 @@
         padding: 10px;
     }
     // 키워드 검색창
-    .search_box {
-        position: relative;
-        .search {
-            width: 210px;
-            height: 40px;
-            padding: 0 20px 0 54px;
-            border-radius: 30px;
-            border: 1px solid transparent;
-            font-size: 14px;
-            background: $gray_f5 url('../images/search_01.png') center left 21px no-repeat;
-            color: $black;
-            &.active {
-                border-color: $black;
-                background-color: $white;
-                background-image: url('../images/search_02.png');
-            }
+    .search {
+        width: 210px;
+        margin-bottom: 0;
+        &.active {
+            border-color: $black;
+            background-color: $white;
+            background-image: url('../images/search_02.png');
         }
-        .research {
-            position: absolute;
-            top: 11px;
-            right: 18px;
-        }
+    }
+    .research {
+        position: absolute;
+        top: 11px;
+        right: 18px;
     }
     .search_text {
         padding-top: 50px;
@@ -69,6 +60,9 @@
     }
     .keyword {
         color: $violet_01;
+    }
+    .talk_list {
+        padding-right: 0;
     }
 }
 // 채팅방 정보 창

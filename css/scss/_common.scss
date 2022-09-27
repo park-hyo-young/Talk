@@ -31,6 +31,15 @@ $white : #fff;
     width: 100%;
     min-width: 800px;
     height: 100vh;
+    // 스크롤바
+    ::-webkit-scrollbar{
+        width: 6px;
+    }
+    ::-webkit-scrollbar-thumb{
+        height: 17%;
+        border-radius: 30px;
+        background-color: $gray_e0;
+    }
 }
 .flex {
     display: flex;
@@ -47,13 +56,4 @@ $white : #fff;
     &.between {
         justify-content: space-between;
     }
-}
-// 스크롤바
-::-webkit-scrollbar{
-    width: 6px;
-}
-::-webkit-scrollbar-thumb{
-    height: 17%;
-    border-radius: 30px;
-    background-color: $gray_e0;
 }

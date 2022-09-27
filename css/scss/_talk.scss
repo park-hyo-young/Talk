@@ -40,31 +40,26 @@
             font-size: 15px;
         }
     }
-    .search_box {
+}
+.search_box {
+    position: relative;
+    .search {
         width: 100%;
         height: 40px;
-        padding: 10px 22px;
+        padding: 0 20px 0 54px;
         margin-bottom: 30px;
         border-radius: 30px;
-        background-color: $gray_f5;
-        a {
-            margin-right: 14px;
-        }
-        .search {
-            width: calc(100% - 34px);
-            font-size: 14px;
-            background-color: transparent;
-            &::placeholder {
-                font-size: 14px;
-            }
-        }
+        border: 1px solid transparent;
+        font-size: 14px;
+        background: $gray_f5 url('../images/search_01.png') center left 21px no-repeat;
+        color: $black;
     }
-    .plus_btn {
-        display: block;
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-    }
+}
+.plus_btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
 .talk_list  {
     overflow: auto;
@@ -74,8 +69,8 @@
 .talk_group {
     position: relative;
     display: flex;
-    justify-content: start;
     align-items: start;
+    justify-content: start;
     color: $black;
     margin-bottom: 30px;
     &:last-child {
@@ -179,13 +174,13 @@
     margin-top: 85px;
     padding: 35px 16px 10px;
     .speech_bubble {
+        display: flex;
         align-items: end;
         .type_01, .type_02 {
-            display: inline-block;
             padding: 8px 15px 8px;
             font-size: 13px;
             line-height: 18px;
-            letter-spacing: -.1px;
+            letter-spacing: -.29px;
         }
         .left {
             margin-left: 56px;
@@ -216,7 +211,7 @@
                 letter-spacing: -.1px;
                 &.reading_num {
                     color: $violet_02;
-                    padding: 4px 0;
+                    padding: 3px 0 2px;
                 }
                 &.time {
                     color: $gray_bb;
@@ -229,15 +224,13 @@
             }
         }
     }
-    .talk_left {
+    .talk_you {
         position: relative;
         margin-top: 20px;
         .speech_bubble {
-            display: flex;
             justify-content: start;
         }
         figure {
-            display: inline-block;
             position: absolute;
             margin-right: 10px;
         }
@@ -249,22 +242,21 @@
             font-size: 13px;
         }
         .etc {
-            margin-left: 10px;
+            margin-left: 8px;
             text-align-last: left;
         }
     }
-    .talk_right {
+    .talk_me {
         position: relative;
         margin-top: 20px;
         .speech_bubble {
-            display: flex;
             justify-content: end;
         }
         .type_01 {
             text-align-last: right;
         }
         .etc {
-            margin-right: 10px;
+            margin-right: 8px;
             text-align-last: right;
         }
     }
