@@ -16,9 +16,9 @@ $(document).ready(function(){
     $('.talk_member').on('click', function(e){
         e.preventDefault();
         if($(this).hasClass('up') === true) {
-            $('.member_list').stop().slideDown();
+            $('.list_box').stop().slideDown();
         } else {
-            $('.member_list').stop().slideUp();
+            $('.list_box').stop().slideUp();
         }
     })
 

@@ -22,7 +22,7 @@
     position: relative; 
     width: 300px;
     height: 100vh;
-    padding: 20px 8px 17px 16px;
+    padding: 20px 8px 5px 16px;
     border-right: 1px solid $gray_de;
     .list_title {
         margin-bottom: 7px;
@@ -141,21 +141,22 @@
     min-width: 440px;
     .talk_header {
         width: 100%;
-        padding: 19px 20px 20px 15px;
-        background-color: $white;
+        padding: 19px 21px 20px 15px;
         font-size: 17px;
         z-index: 100;
         .member {
+            margin-top: 3px;
             margin-left: 8px;
             font-size: 12px;
             color: $gray_99;
         }
         .pin_btn {
+            margin-top: -3px;
             margin-left: 11px;
         }
         .btn_group {
             a {
-                margin-left: 15px;
+                margin-left: 16px;
                 &:first-child {
                     margin-left: 0;
                 }
@@ -167,14 +168,14 @@
     position: relative;
     overflow: auto;
     width: 100%;
-    height: calc(100vh - 191px);
+    height: calc(100vh - 180px);
     margin-right: 8px;
-    padding: 55px 16px 10px;
-    // background-color: rgb(255, 201, 195);
+    padding: 55px 16px 0;
     .speech_bubble {
         display: flex;
         align-items: end;
         .type_01, .type_02 {
+            margin-bottom: 6px;
             padding: 8px 15px 8px 13px;
             font-size: 13px;
             line-height: 18px;
@@ -198,7 +199,6 @@
             }
         }
         .type_02 {
-            margin-top: 6px;
             border-radius: 20px;
         }
         .etc {
@@ -259,7 +259,7 @@
         }
     }
     .date {
-        margin-top: 25px;
+        margin: 25px 0 20px;
         display: block;
         height: 28px;
         text-align: center;
@@ -274,7 +274,6 @@
         }
     }
     .alarm_text {
-        padding-top: 20px;
         text-align: center;
         font-size: 13px;
         color: $gray_99;
