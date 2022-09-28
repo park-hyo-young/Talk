@@ -9,6 +9,7 @@
     &.sp_ico_profile_01 {width: 42px; height: 42px; background-position: -200px -100px;}
     &.sp_ico_profile_02 {width: 42px; height: 42px; background-position: -300px -100px;}
     &.sp_ico_profile_03 {width: 26px; height: 26px; background-position: -300px -400px;}
+    &.sp_ico_profile_04 {width: 30px; height: 30px; background-position: -200px -400px;}
     &.sp_ico_plus_btn {width: 48px; height: 48px; border-radius: 50%; background-position: -400px -100px; box-shadow: 0px 10px 15px rgba($color: $violet_01, $alpha: .3);}
     &.sp_ico_info {width: 24px; height: 24px; background-position: -500px -100px;}
     &.sp_ico_pin {width: 16px; height: 16px; background-position: 0 -200px;
@@ -24,6 +25,7 @@
     &.sp_ico_resend {width: 20px; height: 20px; background-position: -400px -300px;}
     &.sp_ico_research {width: 16px; height: 16px; background-position: -500px -300px;}
     &.sp_ico_close {width: 14px; height: 14px; background-position: 0 -400px;}
-    &.sp_ico_submit {width: 40px; height: 41px; background-position: -100px -400px;}
+    &.sp_ico_submit {width: 20px; height: 20px; background-position: -400px 0;
+        &.on {width: 40px; height: 40px; background-position: -100px -400px;}}
     &.sp_ico_clear {width: 16px; height: 16px; background-position: -400px -400px;}
 }
