@@ -41,11 +41,6 @@
     .search {
         width: 210px;
         margin-bottom: 0;
-        &.active {
-            border-color: $black;
-            background-color: $white;
-            background-image: url('../images/search_02.png');
-        }
     }
     .research {
         position: absolute;

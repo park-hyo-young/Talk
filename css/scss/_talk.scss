@@ -54,6 +54,11 @@
         font-size: 14px;
         background: $gray_f5 url('../images/search_01.png') center left 21px no-repeat;
         color: $black;
+        &.active {
+            border-color: $black;
+            background-color: $white;
+            background-image: url('../images/search_02.png');
+        }
     }
 }
 .plus_btn {
@@ -316,13 +321,18 @@
     .btn_group {
         align-self: end;
         width: 118px;
-        margin-left: 25px;
         a {
             display: block;
             &.submit {
                 width: 40px;
                 text-align: center;
             }
+        }
+        label {
+            cursor: pointer;
+        }
+        input {
+            display: none;
         }
     }
 }
