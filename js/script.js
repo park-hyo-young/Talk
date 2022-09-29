@@ -67,7 +67,7 @@ $(document).ready(function(){
         $('.side_bar').addClass('open');
     });
 
-    // 마우스 클릭시 add 클래스 toggle, hasClass
+    // 마우스 클릭시 toggle
     $('.off i').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('on');
