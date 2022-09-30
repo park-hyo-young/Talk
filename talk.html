@@ -22,7 +22,8 @@
             <!-- 검색창 -->
             <div class="search_box">
                 <!-- 텍스트 작성되면 active 클래스 추가 -->
-                <input type="text" class="search active" placeholder="이름 검색">
+                <input type="text" class="search" placeholder="이름 검색">
+                <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
             </div>
             <!-- 대화방 -->
             <div class="talk_list">
@@ -103,7 +104,8 @@
             <!-- 검색창 -->
             <div class="search_box">
                 <!-- 텍스트 작성되면 active 클래스 추가 -->
-                <input type="text" class="search" placeholder="이름 검색">
+                <input type="text" class="search active" placeholder="이름 검색">
+                <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
             </div>
             <!-- 대화방 -->
             <div class="talk_list">
@@ -300,8 +302,7 @@
                     <a href="#none"><i class="sp sp_ico_emoticon"></i></a>
                     <label for="file_uplode"><i class="sp sp_ico_file"></i></label>
                     <input type="file" id="file_uplode">
-                    <!-- textarea에 글씨 작성 전이면 .on 제거 -->
-                    <a href="#none" class="submit"><i class="sp sp_ico_submit on"></i></a>
+                    <a href="#none" class="submit"><i class="sp sp_ico_submit"></i></a>
                 </div>
             </div>
         </div>
@@ -313,18 +314,19 @@
                     <!-- 텍스트 입력 전 -->
                     <div class="search_box">
                         <input type="text" class="search" placeholder="검색">
+                        <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
                     </div>
                     <p class="search_text">검색어를 입력하세요</p>
                     <!-- 텍스트 입력 시 -->
                     <div class="search_box">
-                        <input type="text" class="search active" placeholder="검색" value="준비물">
+                        <input type="text" class="search" placeholder="검색" value="준비물">
                         <a href="#none" class="research"><i class="sp sp_ico_research"></i></a>
                     </div>
                     <p class="search_text"><span class="keyword">준비물</span>로 검색중입니다.</p>
                     <!-- 검색 완료 시 -->
                     <div class="search_box">
-                        <input type="text" class="search active" placeholder="검색" value="준비물">
-                        <a href="#none" class="research"><i class="sp sp_ico_clear"></i></a>
+                        <input type="text" class="search" placeholder="검색" value="준비물">
+                        <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
                     </div>
                     <!-- 검색 결과 -->
                     <div class="talk_list mt30">

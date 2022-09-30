@@ -32,7 +32,7 @@ $(document).ready(function(){
         }
     });
     // 스크롤 버튼, 새로운 메세지 알림 팝업 클릭 시 아래로 스크롤
-    $(".down_btn, .new_message").click(function(e){
+    $('.down_btn, .new_message').click(function(e){
         e.preventDefault();
         $('.talk_body').animate({scrollTop : ( $(document).height())}, 600);
     });
@@ -81,6 +81,32 @@ $(document).ready(function(){
 		$('.list_btn, .talk_list_area').removeClass('active');
 
 		$(this).addClass('active');
-		$("."+tab_id).addClass('active');
+		$('.' + tab_id).addClass('active');
 	})
+
+    var Class = {
+        search: $('.search_box input'),
+        clear: $('.search_box .clear'),
+    }
+    $('input[type=text]').each(function(){
+        if (!$(this).val() == '') {
+            $(this).parent().addClass('active');
+            $(this).siblings('.clear').show();
+        } 
+        Class.search.on('input', function () {
+            if ($(this).val() == '') {
+                $(this).parent().removeClass('active');
+                $(this).siblings('.clear').hide();
+            } else {
+                $(this).parent().addClass('active');
+                $(this).siblings('.clear').show();
+            }
+        })
+    });
+    Class.clear.on('click', function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $(this).siblings('input').val('');
+        $(this).parent().removeClass('active');
+    });
 });
