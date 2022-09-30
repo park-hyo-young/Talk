@@ -12,6 +12,14 @@
         &:first-child {
             margin-top: 0;
         }
+        &.active {
+            .sp_ico_profile {
+                background-position: -100px 0;
+            }
+            .sp_ico_talk {
+                background-position: -300px 0;
+            }
+        }
     }
     .setting_btn {
         position: absolute;
@@ -19,11 +27,15 @@
     }
 }
 .talk_list_area {
+    display: none;
     position: relative; 
     width: 300px;
     height: 100vh;
     padding: 20px 8px 5px 16px;
     border-right: 1px solid $gray_de;
+    &.active {
+        display: block;
+    }
     .list_title {
         margin-bottom: 7px;
         font-size: 17px;
@@ -159,6 +171,9 @@
             margin-top: -3px;
             margin-left: 11px;
         }
+        figure {
+            margin-right: 15px;
+        }
         .btn_group {
             a {
                 margin-left: 16px;
@@ -175,11 +190,12 @@
     width: 100%;
     height: calc(100vh - 180px);
     margin-right: 8px;
-    padding: 55px 16px 0;
+    padding: 55px 16px 15px;
     .speech_bubble {
         display: flex;
         align-items: end;
         .type_01, .type_02 {
+            max-width: 50%;
             margin-bottom: 6px;
             padding: 8px 15px 8px 13px;
             font-size: 13px;
@@ -197,7 +213,6 @@
         }
         .right {
             color: $white;
-            text-align: right;
             background-color: $violet_02;
             &.type_01 {
                 border-radius: 20px 0 20px 20px;
@@ -228,14 +243,20 @@
         }
     }
     .talk_you {
-        position: relative;
+        position: relative;        
         margin-top: 5px;
         .speech_bubble {
             justify-content: start;
         }
         figure {
             position: absolute;
+            width: 30px;
+            height: 30px;
             margin-right: 10px;
+            background-size: 30px;
+            img {
+                width: 100%;
+            }
         }
         .user_name {
             position: absolute;
@@ -255,12 +276,9 @@
         .speech_bubble {
             justify-content: end;
         }
-        .type_01 {
-            text-align-last: right;
-        }
         .etc {
+            text-align: right;
             margin-right: 8px;
-            text-align-last: right;
         }
     }
     .date {
@@ -297,9 +315,8 @@
     }
 }
 .text_area {
-    position: absolute;
-    width: calc(100% - 362px);
-    padding: 13px 12px 12px 15px;
+    width: calc(100%);
+    padding: 10px 12px 10px 15px;
     bottom: 0;
     border-top: 1px solid $gray_de;
     background-color: $white;
@@ -334,5 +351,12 @@
         input {
             display: none;
         }
+    }
+}
+figure {
+    &.profile {
+        width: 42px;
+        height: 42px;
+        background: url('../images/profile.png') no-repeat;
     }
 }

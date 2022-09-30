@@ -46,24 +46,24 @@ $(document).ready(function(){
     $(document).mouseup(function (e){
         e.preventDefault();
         if($('.popup_back').has(e.target).length === 0){
-            $('.popup_back').fadeOut(500);
+            $('.popup_back').fadeOut(200);
             $('.side_bar').removeClass('open');
         }
     });
     $('.close_btn').on('click', function(e){
         e.preventDefault();
-        $('.popup_back').fadeOut(500);
+        $('.popup_back').fadeOut(200);
         $('.side_bar').removeClass('open');
     });
     
     $('.search_popup_btn').on('click', function(e){
         e.preventDefault();
-        $('.search_popup').fadeIn(500);
+        $('.search_popup').fadeIn(200);
         $('.side_bar').addClass('open');
     });
     $('.info_popup_btn').on('click', function(e){
         e.preventDefault();
-        $('.info_popup').fadeIn(500);
+        $('.info_popup').fadeIn(200);
         $('.side_bar').addClass('open');
     });
 
@@ -72,4 +72,15 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).toggleClass('on');
     });
+
+    // 탭메뉴
+    $('.list_btn').click(function(e){
+        e.preventDefault();
+		var tab_id = $(this).attr('data-tab');
+
+		$('.list_btn, .talk_list_area').removeClass('active');
+
+		$(this).addClass('active');
+		$("."+tab_id).addClass('active');
+	})
 });

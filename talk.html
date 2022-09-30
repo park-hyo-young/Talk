@@ -10,11 +10,92 @@
 <body>
     <div class="wrap flex start">
         <div class="snb_btns">
-            <a href="#none" class="list_btn"><i class="sp sp_ico_profile"></i></a>
-            <a href="#none" class="list_btn"><i class="sp sp_ico_talk on"></i></a>
+            <a href="#none" class="list_btn" data-tab="member"><i class="sp sp_ico_profile"></i></a>
+            <a href="#none" class="list_btn active" data-tab="list"><i class="sp sp_ico_talk"></i></a>
             <a href="#none" class="setting_btn"><i class="sp sp_ico_setting"></i></a>
         </div>
-        <div class="talk_list_area">
+        <div class="talk_list_area member" data-tab="member">
+            <p class="list_title">대화상대</p>
+            <select class="class_list">
+                <option value="가산초등학교 1학년 1반">가산초등학교 1학년 1반</option>
+            </select>
+            <!-- 검색창 -->
+            <div class="search_box">
+                <!-- 텍스트 작성되면 active 클래스 추가 -->
+                <input type="text" class="search active" placeholder="이름 검색">
+            </div>
+            <!-- 대화방 -->
+            <div class="talk_list">
+                <a href="#none" class="talk_group">
+                    <figure><i class="sp sp_ico_notice"></i></figure>
+                    <div class="text_box">
+                        <div class="title_box">
+                            <span class="talk_title">학부모 공지방</span>
+                        </div>
+                        <p class="talk_text">선생님 내일 등교하나요?</p>
+                    </div>
+                    <span class="time">방금전</span>
+                </a>
+                <a href="#none" class="talk_group">
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                    <div class="text_box">
+                        <div class="title_box">
+                            <span class="talk_title">나희도</span>
+                        </div>
+                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요? 각도기, 자, 연필이</p>
+                    </div>
+                    <span class="time">8분전</span>
+                    <span class="talk_alarm">99+</span>
+                </a>
+                <a href="#none" class="talk_group">
+                    <figure class="profile"></figure>
+                    <div class="text_box">
+                        <div class="title_box">
+                            <span class="talk_title">윤석배, 백이진</span>
+                            <sub class="member">3</sub>
+                        </div>
+                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
+                    </div>
+                    <span class="time">4.13</span>
+                    <span class="talk_alarm">25</span>
+                </a>
+                <a href="#none" class="talk_group">
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                    <div class="text_box">
+                        <div class="title_box">
+                            <span class="talk_title">권현주</span>
+                        </div>
+                        <p class="talk_text">선생님 내일 등교하나요?</p>
+                    </div>
+                    <span class="time">4.13</span>
+                </a>
+                <a href="#none" class="talk_group">
+                    <figure class="profile"></figure>
+                    <div class="text_box">
+                        <div class="title_box">
+                            <span class="talk_title">김지언, 박초희, 문지웅</span>
+                            <sub class="member">3</sub>
+                        </div>
+                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
+                    </div>
+                    <span class="time">4.13</span>
+                    <span class="talk_alarm">25</span>
+                </a>
+                <a href="#none" class="talk_group">
+                    <figure class="profile"></figure>
+                    <div class="text_box">
+                        <div class="title_box">
+                            <span class="talk_title">정재훈, 김지영, 고유림,</span>
+                            <sub class="member">28</sub>
+                        </div>
+                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
+                    </div>
+                    <span class="time">4.13</span>
+                </a>
+            </div>
+            <a href="#none" class="plus_btn"><i class="sp sp_ico_plus_btn"></i></a>
+        </div>
+        <div class="talk_list_area list active" data-tab="list">
             <p class="list_title">대화목록</p>
             <select class="class_list">
                 <option value="가산초등학교 1학년 1반">가산초등학교 1학년 1반</option>
@@ -37,7 +118,7 @@
                     <span class="time">방금전</span>
                 </a>
                 <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_profile_02"></i></figure>
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                     <div class="text_box">
                         <div class="title_box">
                             <span class="talk_title">나희도</span>
@@ -48,7 +129,7 @@
                     <span class="talk_alarm">99+</span>
                 </a>
                 <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_profile_01"></i></figure>
+                    <figure class="profile"></figure>
                     <div class="text_box">
                         <div class="title_box">
                             <span class="talk_title">윤석배, 백이진</span>
@@ -60,7 +141,7 @@
                     <span class="talk_alarm">25</span>
                 </a>
                 <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_profile_02"></i></figure>
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                     <div class="text_box">
                         <div class="title_box">
                             <span class="talk_title">권현주</span>
@@ -70,7 +151,7 @@
                     <span class="time">4.13</span>
                 </a>
                 <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_profile_01"></i></figure>
+                    <figure class="profile"></figure>
                     <div class="text_box">
                         <div class="title_box">
                             <span class="talk_title">김지언, 박초희, 문지웅</span>
@@ -82,7 +163,7 @@
                     <span class="talk_alarm">25</span>
                 </a>
                 <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_profile_01"></i></figure>
+                    <figure class="profile"></figure>
                     <div class="text_box">
                         <div class="title_box">
                             <span class="talk_title">정재훈, 김지영, 고유림,</span>
@@ -99,7 +180,7 @@
             <!--  채팅방 연 뒤 -->
             <div class="talk_header flex between">
                 <div class="text_group flex start">
-                    <figure class="mr15"><i class="sp sp_ico_profile_01"></i></figure>
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                     <p class="talk_title">권현주, 김지언, 박효영</p>
                     <sub class="member">3</sub>
                     <a href="#none" class="pin_btn off"><i class="sp sp_ico_pin"></i></a>
@@ -112,7 +193,7 @@
             </div>
             <div class="talk_body">
                 <div class="talk_you">
-                    <figure><i class="sp sp_ico_profile_04"></i></figure>
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                     <span class="user_name">나희도</span>
                     <div class="speech_bubble">
                         <span class="left type_01">넌 날 빛나게 해. 존재만으로</span>
@@ -155,7 +236,7 @@
                     <p>정재훈님이 입장하였습니다.</p>
                 </div>
                 <div class="talk_you">
-                    <figure><i class="sp sp_ico_profile_04"></i></figure>
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                     <span class="user_name">나희도</span>
                     <div class="speech_bubble">
                         <span class="left type_01">안녕하세요.</span>
@@ -169,7 +250,7 @@
                     <p>여기까지 읽으셨습니다.</p>
                 </div>
                 <div class="talk_you">
-                    <figure><i class="sp sp_ico_profile_04"></i></figure>
+                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                     <span class="user_name">김지언</span>
                     <div class="speech_bubble">
                         <span class="left type_01">넌 날 빛나게 해. 존재만으로.</span>
@@ -193,7 +274,7 @@
                 </div>
                 <a href="#none" class="talk_popup clock_notcie dropdown">
                     <div class="notice_group">
-                        <figure><i class="sp sp_ico_clock"></i></figure>
+                        <i class="sp sp_ico_clock"></i>
                         <span>상담가능 시간</span>
                         <div class="time_list">
                             <p>월요일<strong>09:00 ~ 18:00</strong></p> 
@@ -248,7 +329,7 @@
                     <!-- 검색 결과 -->
                     <div class="talk_list mt30">
                         <a href="#none" class="talk_group">
-                            <figure><i class="sp sp_ico_profile_01"></i></figure>
+                            <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                             <div class="text_box">
                                 <div class="title_box">
                                     <span class="talk_title">나희도</span>
@@ -257,7 +338,7 @@
                             </div>
                         </a>
                         <a href="#none" class="talk_group">
-                            <figure><i class="sp sp_ico_profile_02"></i></figure>
+                            <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
                             <div class="text_box">
                                 <div class="title_box">
                                     <span class="talk_title">나희도</span>
