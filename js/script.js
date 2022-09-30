@@ -84,6 +84,7 @@ $(document).ready(function(){
 		$('.' + tab_id).addClass('active');
 	})
 
+    // 검색 input/clear 버튼
     var Class = {
         search: $('.search_box input'),
         clear: $('.search_box .clear'),
@@ -103,8 +104,7 @@ $(document).ready(function(){
             }
         })
     });
-    Class.clear.on('click', function(e) {
-        e.preventDefault();
+    Class.clear.on('click', function() {
         $(this).hide();
         $(this).siblings('input').val('');
         $(this).parent().removeClass('active');
