@@ -85,7 +85,7 @@ $(document).ready(function(){
     $('.search_box input').each(function(){
         if (!$(this).val() == '') {
             $(this).siblings('.clear').show();
-            // $(this).siblings('.search_btn').addClass('active');
+            $(this).siblings('.search_btn').addClass('active');
             $(this).parent().addClass('active');
         } 
         $(this).on('input', function () {
