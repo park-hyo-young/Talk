@@ -55,7 +55,6 @@ $(document).ready(function(){
         $('.popup_back').fadeOut(200);
         $('.side_bar').removeClass('open');
     });
-    
     $('.search_popup_btn').on('click', function(e){
         e.preventDefault();
         $('.search_popup').fadeIn(200);
@@ -77,9 +76,7 @@ $(document).ready(function(){
     $('.list_btn').click(function(e){
         e.preventDefault();
 		var tab_id = $(this).attr('data-tab');
-
 		$('.list_btn, .talk_list_area').removeClass('active');
-
 		$(this).addClass('active');
 		$('.' + tab_id).addClass('active');
 	})
