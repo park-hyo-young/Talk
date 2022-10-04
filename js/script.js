@@ -81,22 +81,23 @@ $(document).ready(function(){
 		$('.' + tab_id).addClass('active');
 	})
 
-    // 검색 input에 값 있으면 버튼 active
+    // 검색 input에 값 있으면 배경/테두리 색 변경, clear 버튼 생성
     $('.search_box input').each(function(){
         if (!$(this).val() == '') {
-            $(this).parent().addClass('active');
             $(this).siblings('.clear').show();
+            $(this).parent().addClass('active');
         } 
         $(this).on('input', function () {
             if ($(this).val() == '') {
-                $(this).parent().removeClass('active');
                 $(this).siblings('.clear').hide();
+                $(this).parent().removeClass('active');
             } else {
-                $(this).parent().addClass('active');
                 $(this).siblings('.clear').show();
+                $(this).parent().addClass('active');
             }
         })
     });
+    // clear 버튼 클릭하면 input 값 지우기
     $('.search_box .clear').on('click', function() {
         $(this).hide();
         $(this).siblings('input').val('');
