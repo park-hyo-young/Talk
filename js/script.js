@@ -85,12 +85,12 @@ $(document).ready(function(){
 	})
 
     // 검색 input/clear 버튼
-    $('input[type=text]').each(function(){
+    $('.search_box input').each(function(){
         if (!$(this).val() == '') {
             $(this).parent().addClass('active');
             $(this).siblings('.clear').show();
         } 
-        $('.search_box input').on('input', function () {
+        $(this).on('input', function () {
             if ($(this).val() == '') {
                 $(this).parent().removeClass('active');
                 $(this).siblings('.clear').hide();
@@ -105,5 +105,4 @@ $(document).ready(function(){
         $(this).siblings('input').val('');
         $(this).parent().removeClass('active');
     });
-
 });

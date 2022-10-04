@@ -76,7 +76,7 @@
     }
     .search {
         height: 40px;
-        padding: 0 20px 0 54px;
+        padding: 0 40px 0 50px;
         background-color: transparent;
     }
 }
@@ -116,8 +116,7 @@
             align-items: center;
             justify-content: start;
             .talk_title {
-                overflow: hidden;
-                white-space: nowrap;
+                @include ellipsis;
                 max-width: 155px;
                 height: 15px;
                 font-size: 15px;
@@ -198,6 +197,9 @@
     height: calc(100vh - 180px);
     margin-right: 8px;
     padding: 55px 16px 15px;
+    &::-webkit-scrollbar-track {
+        margin: 50px 0 5px;
+    }
     .speech_bubble {
         display: flex;
         align-items: end;
