@@ -25,7 +25,7 @@ $(document).ready(function(){
     // 스크롤 버튼
     $('.talk_body').scroll(function(e) {
         e.preventDefault();
-        if ($(this).scrollTop() < 100) {
+        if ($(this).scrollTop() < 10) {
             $('.down_btn').fadeIn();
         } else {
             $('.down_btn').fadeOut();
