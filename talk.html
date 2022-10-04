@@ -14,7 +14,7 @@
             <a href="#none" class="list_btn active" data-tab="list"><i class="sp sp_ico_talk"></i></a>
             <a href="#none" class="setting_btn"><i class="sp sp_ico_setting"></i></a>
         </div>
-        <div class="talk_list_area member" data-tab="member">
+        <div class="talk_list_area" id="member">
             <p class="list_title">대화상대</p>
             <select class="class_list">
                 <option value="가산초등학교 1학년 1반">가산초등학교 1학년 1반</option>
@@ -22,81 +22,94 @@
             <!-- 검색창 -->
             <div class="search_box">
                 <!-- 텍스트 작성되면 active 클래스 추가 -->
+                <a href="#none" class="search_btn"></a>
                 <input type="text" placeholder="이름 검색">
                 <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
             </div>
             <!-- 대화방 -->
-            <div class="talk_list">
-                <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_notice"></i></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">학부모 공지방</span>
+            <ul class="talk_list">
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure><i class="sp sp_ico_notice"></i></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">학부모 공지방</span>
+                            </div>
+                            <p class="talk_text">선생님 내일 등교하나요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 등교하나요?</p>
-                    </div>
-                    <span class="time">방금전</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">나희도</span>
+                        <span class="time">방금전</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">나희도</span>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요? 각도기, 자, 연필이</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요? 각도기, 자, 연필이</p>
-                    </div>
-                    <span class="time">8분전</span>
-                    <span class="talk_alarm">99+</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">윤석배, 백이진</span>
-                            <sub class="member">3</sub>
+                        <span class="time">8분전</span>
+                        <span class="talk_alarm">99+</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">윤석배, 백이진</span>
+                                <sub class="member">3</sub>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                    <span class="talk_alarm">25</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">권현주</span>
+                        <span class="time">4.13</span>
+                        <span class="talk_alarm">25</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">권현주</span>
+                            </div>
+                            <p class="talk_text">선생님 내일 등교하나요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 등교하나요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">김지언, 박초희, 문지웅</span>
-                            <sub class="member">3</sub>
+                        <span class="time">4.13</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">김지언, 박초희, 문지웅</span>
+                                <sub class="member">3</sub>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                    <span class="talk_alarm">25</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">정재훈, 김지영, 고유림,</span>
-                            <sub class="member">28</sub>
+                        <span class="time">4.13</span>
+                        <span class="talk_alarm">25</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">정재훈, 김지영, 고유림,</span>
+                                <sub class="member">28</sub>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                </a>
-            </div>
+                        <span class="time">4.13</span>
+                    </a>
+                </li>
+            </ul>
             <a href="#none" class="plus_btn"><i class="sp sp_ico_plus_btn"></i></a>
         </div>
-        <div class="talk_list_area list active" data-tab="list">
+        <div class="talk_list_area active" id="list">
             <p class="list_title">대화목록</p>
             <select class="class_list">
                 <option value="가산초등학교 1학년 1반">가산초등학교 1학년 1반</option>
@@ -104,78 +117,91 @@
             <!-- 검색창 -->
             <div class="search_box">
                 <!-- 텍스트 작성되면 active 클래스 추가 -->
+                <a href="#none" class="search_btn"></a>
                 <input type="text" placeholder="이름 검색">
                 <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
             </div>
             <!-- 대화방 -->
-            <div class="talk_list">
-                <a href="#none" class="talk_group">
-                    <figure><i class="sp sp_ico_notice"></i></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">학부모 공지방</span>
+            <ul class="talk_list">
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure><i class="sp sp_ico_notice"></i></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">학부모 공지방</span>
+                            </div>
+                            <p class="talk_text">선생님 내일 등교하나요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 등교하나요?</p>
-                    </div>
-                    <span class="time">방금전</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">나희도</span>
+                        <span class="time">방금전</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">나희도</span>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요? 각도기, 자, 연필이</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요? 각도기, 자, 연필이</p>
-                    </div>
-                    <span class="time">8분전</span>
-                    <span class="talk_alarm">99+</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">윤석배, 백이진</span>
-                            <sub class="member">3</sub>
+                        <span class="time">8분전</span>
+                        <span class="talk_alarm">99+</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">윤석배, 백이진</span>
+                                <sub class="member">3</sub>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                    <span class="talk_alarm">25</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">권현주</span>
+                        <span class="time">4.13</span>
+                        <span class="talk_alarm">25</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">권현주</span>
+                            </div>
+                            <p class="talk_text">선생님 내일 등교하나요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 등교하나요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">김지언, 박초희, 문지웅</span>
-                            <sub class="member">3</sub>
+                        <span class="time">4.13</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">김지언, 박초희, 문지웅</span>
+                                <sub class="member">3</sub>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                    <span class="talk_alarm">25</span>
-                </a>
-                <a href="#none" class="talk_group">
-                    <figure class="profile"></figure>
-                    <div class="text_box">
-                        <div class="title_box">
-                            <span class="talk_title">정재훈, 김지영, 고유림,</span>
-                            <sub class="member">28</sub>
+                        <span class="time">4.13</span>
+                        <span class="talk_alarm">25</span>
+                    </a>
+                </li>
+                <li class="talk_group">
+                    <a href="#none">
+                        <figure class="profile"></figure>
+                        <div class="text_box">
+                            <div class="title_box">
+                                <span class="talk_title">정재훈, 김지영, 고유림,</span>
+                                <sub class="member">28</sub>
+                            </div>
+                            <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
                         </div>
-                        <p class="talk_text">선생님 내일 수학 준비물 무엇인가요?</p>
-                    </div>
-                    <span class="time">4.13</span>
-                </a>
-            </div>
+                        <span class="time">4.13</span>
+                    </a>
+                </li>
+            </ul>
             <a href="#none" class="plus_btn"><i class="sp sp_ico_plus_btn"></i></a>
         </div>
         <div class="talk_area flex">
@@ -313,42 +339,49 @@
                     <p class="popup_title">대화내용 검색</p>
                     <!-- 텍스트 입력 전 -->
                     <div class="search_box">
-                        <input type="text" placeholder="검색">
+                    <a href="#none" class="search_btn"></a>
+                    <input type="text" placeholder="검색">
                         <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
                     </div>
                     <p class="search_text">검색어를 입력하세요</p>
                     <!-- 텍스트 입력 시 -->
                     <div class="search_box">
-                        <input type="text" placeholder="검색" value="준비물">
+                    <a href="#none" class="search_btn"></a>
+                    <input type="text" placeholder="검색" value="준비물">
                         <a href="#none" class="research"><i class="sp sp_ico_research"></i></a>
                     </div>
                     <p class="search_text"><span class="keyword">준비물</span>로 검색중입니다.</p>
                     <!-- 검색 완료 시 -->
                     <div class="search_box">
-                        <input type="text" placeholder="검색" value="준비물">
+                    <a href="#none" class="search_btn"></a>
+                    <input type="text" placeholder="검색" value="준비물">
                         <a href="#none" class="clear"><i class="sp sp_ico_clear"></i></a>
                     </div>
                     <!-- 검색 결과 -->
-                    <div class="talk_list mt30">
-                        <a href="#none" class="talk_group">
-                            <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
-                            <div class="text_box">
-                                <div class="title_box">
-                                    <span class="talk_title">나희도</span>
+                    <ul class="talk_list mt30">
+                        <li class="talk_group">
+                            <a href="#none">
+                                <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                                <div class="text_box">
+                                    <div class="title_box">
+                                        <span class="talk_title">나희도</span>
+                                    </div>
+                                    <p class="talk_text"><span class="keyword">준비물</span>목록.pdf</p>
                                 </div>
-                                <p class="talk_text"><span class="keyword">준비물</span>목록.pdf</p>
-                            </div>
-                        </a>
-                        <a href="#none" class="talk_group">
-                            <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
-                            <div class="text_box">
-                                <div class="title_box">
-                                    <span class="talk_title">나희도</span>
+                            </a>
+                        </li>
+                        <li class="talk_group">
+                            <a href="#none">
+                                <figure class="profile"><img src="images/profile_user.png" alt="사용자 프로필사진"></figure>
+                                <div class="text_box">
+                                    <div class="title_box">
+                                        <span class="talk_title">나희도</span>
+                                    </div>
+                                    <p class="talk_text">선생님 내일 수학 <span class="keyword">준비물</span> 무엇인가요? 각도기, 자, 연필이</p>
                                 </div>
-                                <p class="talk_text">선생님 내일 수학 <span class="keyword">준비물</span> 무엇인가요? 각도기, 자, 연필이</p>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <a href="#none" class="close_btn"><i class="sp sp_ico_close"></i></a>
             </div>

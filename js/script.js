@@ -73,26 +73,29 @@ $(document).ready(function(){
     });
 
     // 탭메뉴
-    $('.list_btn').click(function(e){
+    $('.snb_btns .list_btn').click(function(e){
         e.preventDefault();
 		var tab_id = $(this).attr('data-tab');
-		$('.list_btn, .talk_list_area').removeClass('active');
+		$('.snb_btns .list_btn, .talk_list_area').removeClass('active');
 		$(this).addClass('active');
-		$('.' + tab_id).addClass('active');
+		$('#' + tab_id).addClass('active');
 	})
 
     // 검색 input에 값 있으면 배경/테두리 색 변경, clear 버튼 생성
     $('.search_box input').each(function(){
         if (!$(this).val() == '') {
             $(this).siblings('.clear').show();
+            // $(this).siblings('.search_btn').addClass('active');
             $(this).parent().addClass('active');
         } 
         $(this).on('input', function () {
             if ($(this).val() == '') {
                 $(this).siblings('.clear').hide();
+                $(this).siblings('.search_btn').addClass('active');
                 $(this).parent().removeClass('active');
             } else {
                 $(this).siblings('.clear').show();
+                $(this).siblings('.search_btn').addClass('active');
                 $(this).parent().addClass('active');
             }
         })
@@ -101,6 +104,7 @@ $(document).ready(function(){
     $('.search_box .clear').on('click', function() {
         $(this).hide();
         $(this).siblings('input').val('');
+        $(this).siblings('.search_btn').removeClass('active');
         $(this).parent().removeClass('active');
     });
 
