@@ -91,7 +91,7 @@ $(document).ready(function(){
         $(this).on('input', function () {
             if ($(this).val() == '') {
                 $(this).siblings('.clear').hide();
-                $(this).siblings('.search_btn').addClass('active');
+                $(this).siblings('.search_btn').removeClass('active');
                 $(this).parent().removeClass('active');
             } else {
                 $(this).siblings('.clear').show();

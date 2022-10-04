@@ -114,12 +114,10 @@
         a {
             height: 38px;
             padding: 0;
+            padding-left: 36px;
             line-height: 38px;
-            i {
-                margin-top: -4px;
-                margin-right: 10px;
-                vertical-align: middle;
-            }
+            background: url('../images/profile.png') left center no-repeat;
+            background-size: 26px;
         }
         .member_setting {
             position: relative;
