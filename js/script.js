@@ -84,7 +84,7 @@ $(document).ready(function(){
 		$('.' + tab_id).addClass('active');
 	})
 
-    // 검색 input/clear 버튼
+    // 검색 input에 값 있으면 버튼 active
     $('.search_box input').each(function(){
         if (!$(this).val() == '') {
             $(this).parent().addClass('active');
@@ -104,5 +104,19 @@ $(document).ready(function(){
         $(this).hide();
         $(this).siblings('input').val('');
         $(this).parent().removeClass('active');
+    });
+
+    // textarer에 값 있으면 버튼 active
+    $('.text_area textarea').each(function(){
+        if (!$(this).val() == '') {
+            $('.btn_group .submit').addClass('active');
+        } 
+        $(this).on('input', function () {
+            if ($(this).val() == '') {
+                $('.btn_group .submit').removeClass('active');
+            } else {
+                $('.btn_group .submit').addClass('active');
+            }
+        })
     });
 });
